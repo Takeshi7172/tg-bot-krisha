@@ -35,3 +35,6 @@ env/
 # OS
 .DS_Store
 Thumbs.db
+
+# Keep the env template tracked (overrides .env.* above)
+!.env.example
