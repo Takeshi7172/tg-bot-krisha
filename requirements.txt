@@ -1,0 +1,27 @@
+# tg-bot-krisha — Python dependencies
+# Wave 2 pins. Update by running: pip-compile requirements.in (if using pip-tools)
+#
+# NOTE: aiogram is listed here for Wave 3 (bot handlers). It is NOT imported
+# anywhere in the Wave 2 scraper/db/poller modules — they are Telegram-free.
+
+# Telegram bot framework
+aiogram>=3.13,<4
+
+# Async HTTP client (scraper, API calls)
+httpx>=0.27
+
+# Fast HTML parsing (selectolax wraps lexbor C parser)
+selectolax>=0.3
+
+# Supabase client (async, v2)
+supabase>=2.7
+
+# Pydantic v2 + settings
+pydantic>=2.8
+pydantic-settings>=2.4
+
+# .env file loading
+python-dotenv>=1.0
+
+# Redis (optional — for FSM storage if not using Supabase fsm_state table)
+redis>=5

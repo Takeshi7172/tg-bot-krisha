@@ -1,0 +1,37 @@
+# Secrets — NEVER commit
+.env
+.env.*
+*.env
+
+# Python bytecode
+*.pyc
+*.pyo
+__pycache__/
+
+# Test / coverage artefacts
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+.pytest_cache/
+
+# Ruff cache
+.ruff_cache/
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDE
+.idea/
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
